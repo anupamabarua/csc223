@@ -1,6 +1,6 @@
 # Algorithm
 ## Definition:
-A **algorithm** is [a set of finite, well-defined steps or instructions designed to solve case of problems or perform a computation.](https://www.geeksforgeeks.org/dsa/introduction-to-algorithms/)
+A **algorithm** is [a set of finite, well-defined steps or instructions designed to solve a class of problems or perform a computation.](https://www.geeksforgeeks.org/dsa/introduction-to-algorithms/)
 
 # Analyize
 ## Definition:
