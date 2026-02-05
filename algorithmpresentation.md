@@ -6,7 +6,7 @@ A **algorithm** is [a set of finite, well-defined steps or instructions designed
 ## Definition:
 To **analyize** is to measure and evaluate an alogrithms performance by examining how much time and space it uses as the size of the input increases.
 
-## What do we mean by "analysis of algorithms"?
+# What do we mean by "analysis of algorithms"?
 "Analysis of algorithms" is the study of how efficant a algorithm is. It involves evaluating performance of algorithms and programs, particularly in terms of time and space, as the size of the input grows.
 
 # What about alogirthms needs to be analyzed?
