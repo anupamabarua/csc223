@@ -1,3 +1,9 @@
+/*
+ * To compile and run this program:
+ *
+ * gcc maxheap.c -o maxheap
+ * ./maxheap
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
