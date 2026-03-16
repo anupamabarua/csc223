@@ -1,29 +1,27 @@
 #include <stdio.h>
 
-#define MAX_SIZE 100
+#define MAXSIZE 100
 
-int heap[MAX_SIZE];
-int heap_size = 0;  
+int heap[MAXSIZE];
+int heap_size;  
 
-
-void swap(a, b)
-    int *a;
-    int *b;
+swap(a, b)
+int *a;
+int *b;
 {
     int temp;
     temp = *a;
-    *a   = *b;
-    *b   = temp;
+    *a = *b;
+    *b = temp;
 }
 
-
-void insert(value)
-    int value;
+insert(value)
+int value;
 {
     int i;
     int parent;
 
-    if (heap_size >= MAX_SIZE) {
+    if (heap_size >= MAXSIZE) {
         printf("Heap is full!\n");
         return;
     }
@@ -45,30 +43,30 @@ void insert(value)
     printf("Inserted %d\n", value);
 }
 
-
-int removeMax()
+removeMax()
 {
     int max;
     int i;
-    int left, right, largest;
+    int left;
+    int right;
+    int largest;
 
     if (heap_size == 0) {
         printf("Heap is empty!\n");
         return -1;
     }
 
-    max        = heap[0];
-    heap[0]    = heap[heap_size - 1];
+    max = heap[0];
+    heap[0] = heap[heap_size - 1];
     heap_size--;
 
-    /* sift down */
     i = 0;
     for (;;) {
-        left    = 2 * i + 1;
-        right   = 2 * i + 2;
+        left = 2 * i + 1;
+        right = 2 * i + 2;
         largest = i;
 
-        if (left  < heap_size && heap[left]  > heap[largest])
+        if (left < heap_size && heap[left] > heap[largest])
             largest = left;
         if (right < heap_size && heap[right] > heap[largest])
             largest = right;
@@ -84,8 +82,7 @@ int removeMax()
     return max;
 }
 
-
-void printHeap()
+printHeap()
 {
     int i;
 
@@ -95,19 +92,19 @@ void printHeap()
     }
 
     printf("Heap array: ");
-    for (i = 0; i < heap_size; i++) {
+    for (i = 0; i < heap_size; i++)
         printf("%d ", heap[i]);
-    }
     printf("\n");
     printf("Max (root): %d\n", heap[0]);
 }
 
-
-int main()
+main()
 {
     int choice;
     int value;
     int max;
+
+    heap_size = 0;
 
     printf("=== Max Heap Program ===\n");
 
@@ -137,6 +134,4 @@ int main()
             printf("Invalid choice.\n");
         }
     }
-
-    return 0;
 }
