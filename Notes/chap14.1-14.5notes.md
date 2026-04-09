@@ -1,4 +1,4 @@
-# Chapter 14: Searching and Sorting — Notes (Sections 14.1–14.5)
+# Chapter 14: Searching and Sorting
 ## 14.1 Introduction to Searching
 ### Definition
 Searching means determining whether a specific value exists in an array.  
