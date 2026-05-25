@@ -1,0 +1,1 @@
+For the final project I just worked on my sort code because I never got around to finishing it. This topic is intreseting to me because  I like how selection sort works through the array one step at a time and it always finds the smallest element and puts it in the right place before moving on. 
